@@ -4,7 +4,7 @@ import './App.css';
 class FailPage extends Component {
   render() {
     return (
-        <h1>You have failed and dishonored your ancesters</h1>
+        <h1>You have failed and dishonored your ancestors</h1>
     );
   }
 }
