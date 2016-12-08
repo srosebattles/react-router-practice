@@ -30,7 +30,7 @@ componentDidMount() {
 getStoreList() {
   axios.get(this.state.lastSearched)
   .then((response) => {
-    var newStoreList = response.data.data.slice(0);
+    var newStoreList = response.data.slice(0);
     this.setState({
       storeList: newStoreList
     })
