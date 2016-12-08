@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import axios from 'axios'
-import {Link} from 'react-router'
-import GoogleMap from 'google-map-react'
+import axios from 'axios';
+import {Link} from 'react-router';
+import GoogleMap from 'google-map-react';
 import './App.css';
-import MapIcon from './mapicon.js'
+import MapIcon from './mapicon.js';
 
 
 class OneStore extends Component {

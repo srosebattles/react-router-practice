@@ -22,7 +22,39 @@
   height: 300px;
 }
 
+.nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navItem {
+  display:inline-block;
+}
+
+.eachStore {
+  margin: 5%;
+  text-align: left;
+}
+
+.eachStore a {
+  color: darkgray;
+  text-decoration: none;
+}
+
+.eachStore a:hover {
+  color: lightgray;
+}
+
+.mapLogo {
+  max-height: 25px;
+  width: auto;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+ul {
+  list-style: none;
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import axios from 'axios'
-import {Link} from 'react-router'
+import axios from 'axios';
+import {Link} from 'react-router';
 import './App.css';
 
 class StoresPage extends Component {
@@ -51,7 +51,7 @@ class StoresPage extends Component {
         <ul>
         {this.state.storeList.map((store, index) => {
           return (
-            <li key={store.id}>
+            <li className="eachStore" key={store.id}>
               <Link to={`/stores/${store.id}`}><span>{store.name}</span></Link>
               <br />
               <span>{store.address}</span>

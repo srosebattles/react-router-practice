@@ -6,7 +6,7 @@ import HomePage from './HomePage';
 import AboutPage from './AboutPage';
 import StoresPage from './StoresPage';
 import FailPage from './FailPage';
-import OneStore from './OneStore'
+import OneStore from './OneStore';
 import './index.css';
 
 ReactDOM.render((
