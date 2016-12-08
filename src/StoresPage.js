@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom'
 import './App.css';
 
 class StoresPage extends Component {
@@ -25,6 +24,7 @@ class StoresPage extends Component {
               <br />
             </li>
           )
+        })}
         </ul>
         </div>
 

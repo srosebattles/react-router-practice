@@ -21,25 +21,26 @@ class App extends Component {
       long: '',
       hours: '',
       lastSearched: 'http://localhost:3030/stores'
-}
+    }
+  }
 
-componentDidMount() {
+  componentDidMount() {
     this.getStoreList()
-}
+  }
 
-getStoreList() {
-  axios.get(this.state.lastSearched)
-  .then((response) => {
-    var newStoreList = response.data.data.slice(0);
-    this.setState({
-      storeList: newStoreList
+  getStoreList() {
+    axios.get(this.state.lastSearched)
+    .then((response) => {
+      var newStoreList = response.data.data.slice(0);
+      this.setState({
+        storeList: newStoreList
+      })
     })
-  })
-  .catch((error) => {
-    alert(error);
-    console.log(error);
-  });
-}
+    .catch((error) => {
+      alert(error);
+      console.log(error);
+    });
+  }
 
   render() {
     return (
