@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import axios from 'axios'
 import {Link} from 'react-router'
+import GoogleMap from 'google-map-react'
 import './App.css';
+import MapIcon from './mapicon.js'
+
 
 class OneStore extends Component {
   constructor(props) {
@@ -29,7 +32,17 @@ class OneStore extends Component {
 
   render() {
     return (
-      <div>{this.state.store.name}</div>
+      <div>
+      {this.state.store.name}
+      <div className="mapDiv">
+      <GoogleMap
+        center={{lat: this.state.store.lat, lng: this.state.store.lng}}
+        defaultZoom={9}
+      >
+        <MapIcon lat={this.state.store.lat} lng={this.state.store.lng} text={'A'} />
+      </GoogleMap>
+      </div>
+      </div>
   )}
 
 }
